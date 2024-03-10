@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <title>Flight Fare Prediction</title>
+</head>
+<body style="overflow: scroll;">
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        {% if label %}
+                            <h3>Predicte Fare Price: {{ label }}/- Rs.</h3>
+                        {% endif %}
+                        <h3></h3>
+                        <h3>Flight Fare Prediction</h3>
+                        <p>Fill in the details below below.</p>
+                        <form class="requires-validation" novalidate action="/" method="post" enctype="multipart/form-data">
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="day" name="day">
+                                    <option selected>Select Day</option>
+                                    {% for option in days %}
+                                        <option value="{{ days.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="airline" name="airline">
+                                    <option selected>Select Airline</option>
+                                    {% for option in airlines %}
+                                        <option value="{{ airlines.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="class" name="class">
+                                    <option selected>Select Class</option>
+                                    {% for option in classes %}
+                                        <option value="{{ classes.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="source" name="source">
+                                    <option selected>Select Source</option>
+                                    {% for option in cities %}
+                                        <option value="{{ cities.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="departure" name="departure">
+                                    <option selected>Select Departure Time</option>
+                                    {% for option in departures %}
+                                        <option value="{{ departures.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="stops" name="stops">
+                                    <option selected>Select No. of Stops</option>
+                                    {% for option in stops %}
+                                        <option value="{{ stops.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="arrival" name="arrival">
+                                    <option selected>Select Arrival Time</option>
+                                    {% for option in departures %}
+                                        <option value="{{ departures.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <select class="form-select" aria-label="Default select example" id="destination" name="destination">
+                                    <option selected>Select Destination</option>
+                                    {% for option in cities %}
+                                        <option value="{{ cities.index(option) }}">{{ option }}</option>
+                                    {% endfor %}
+                                  </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="duration" name="duration" aria-describedby="basic-addon3" placeholder="Enter Duration of Flight">
+                            </div>    
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="days" name="days" aria-describedby="basic-addon3" placeholder="Number of days left for the flight">
+                                <br>
+                            </div>    
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        <br><br>
+                        <br><br>
+                        <div style="margin-left: 20px;">
+                        <p>Mady By: Khan Faisal</p>
+                        <a href="https://khanfaisal.netlify.app" class="nav-link px-2 text-muted">Portfolio</a>
+                        ><a href="https://www.linkedin.com/in/khanfaisal79960" class="nav-link px-2 text-muted">Linkedin</a>
+                        ><a href="https://github.com/khanfaisal79960" class="nav-link px-2 text-muted">Github</a>
+                        ><a href="https://medium.com/@khanfaisal79960" class="nav-link px-2 text-muted">Medium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
