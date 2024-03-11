@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[flight-fare-prediction.replit.app](flight-fare-prediction.replit.app)
+[https://flight-fare-prediction.replit.app](https://flight-fare-prediction.replit.app)
 
 <h2>Project Screenshots:</h2>
 
