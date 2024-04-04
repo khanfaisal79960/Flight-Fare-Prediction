@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/khanfaisal79960/flight-fare-prediction/image?description=1&amp;descriptionEditable=Check%20Before%20You%20Board&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">Introducing our innovative Flight Fare Prediction project – an intelligent solution designed to empower travelers in making informed decisions. Say goodbye to uncertainty and hello to budget-friendly journeys. Our system leverages advanced algorithms and historical data to forecast future flight fares helping you plan your travels with confidence. Discover the ease of predicting airfares in advance and unlocking a seamless travel experience. Welcome to a new era of smart and stress-free journey planning</p>
+<p id="description">This project aims to develop a machine learning model to predict flight fares based on various factors such as departure time, destination, airline, and booking class. Accurate fare prediction can be beneficial for travelers to plan their trips effectively and budget accordingly.</p>
 
 <h2>🚀 Demo</h2>
 
